@@ -1,0 +1,10 @@
+{
+  "name": "blueprint",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "lodash": "4.17.11",
+    "mustache": "^3.0.1",
+    "raw-body": "^2.4.1"
+  }
+}

@@ -1,0 +1,1 @@
+Brownie was browsing Discord when a notification popped up. Included was a wav file and a promise of a $100 prize. Desperate for funds towards redpwn's upcoming ctf, he tried solving it but his attempts were of no avail. Can you help redpwn pay off its debt?

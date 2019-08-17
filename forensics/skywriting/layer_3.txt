@@ -1,0 +1,46 @@
+to be honest, i was surprised at the difficulty teams experienced in solving this problem. however, i hope any teams that were stymied by it don’t think it was necessarily unfair, just difficult. i think each step in this solution could be catalyzed by logical clues, and nothing required pure trial-and-error. i think the difficulty delta from the rest of pactf might have exacerbated the difficulties teams faced: perhaps people were expecting a problem closer to the round 1 hard problems. additionally, it’s a fairly non-standard ctf problem. i’d argue that works to the problem’s advantage, and from what i’ve seen people who haven’t done too many ctfs seemed to like it more, but that’s anecdotal. if you disagree, or want to share anything else, feel free to contact me! hope you enjoyed the ctf as a whole! also, if you like problems like this, make sure to check out pactf 2019 in many months’ time.
+    -- nicholasm
+
+keep going.
+
+don't be evil.
+
+this challenge is intuitive.
+
+here is a tiny shortened clue to the document you will need. keep your head in the cloud.
+
+tinyflaglink
+
+--------------------------------
+
+useless chunks of english text to make frequency analysis easier (ignore below this point):
+
+in cryptography, a substitution cipher is a method of encrypting by which units of plaintext are replaced with ciphertext, according to a fixed system; the "units" may be single letters (the most common), pairs of letters, triplets of letters, mixtures of the above, and so forth. the receiver deciphers the text by performing the inverse substitution.
+
+substitution ciphers can be compared with transposition ciphers. in a transposition cipher, the units of the plaintext are rearranged in a different and usually quite complex order, but the units themselves are left unchanged. by contrast, in a substitution cipher, the units of the plaintext are retained in the same sequence in the ciphertext, but the units themselves are altered.
+
+there are a number of different types of substitution cipher. if the cipher operates on single letters, it is termed a simple substitution cipher; a cipher that operates on larger groups of letters is termed polygraphic. a monoalphabetic cipher uses fixed substitution over the entire message, whereas a polyalphabetic cipher uses a number of substitutions at different positions in the message, where a unit from the plaintext is mapped to one of several possibilities in the ciphertext and vice versa.
+
+substitution of single letters separately—simple substitution—can be demonstrated by writing out the alphabet in some order to represent the substitution. this is termed a substitution alphabet. the cipher alphabet may be shifted or reversed (creating the caesar and atbash ciphers, respectively) or scrambled in a more complex fashion, in which case it is called a mixed alphabet or deranged alphabet. traditionally, mixed alphabets may be created by first writing out a keyword, removing repeated letters in it, then writing all the remaining letters in the alphabet in the usual order.
+
+traditionally, the ciphertext is written out in blocks of fixed length, omitting punctuation and spaces; this is done to help avoid transmission errors and to disguise word boundaries from the plaintext. these blocks are called "groups", and sometimes a "group count" (i.e., the number of groups) is given as an additional check. five-letter groups are traditional, dating from when messages used to be transmitted by telegraph:
+
+if the length of the message happens not to be divisible by five, it may be padded at the end with "nulls". these can be any characters that decrypt to obvious nonsense, so the receiver can easily spot them and discard them.
+
+the ciphertext alphabet is sometimes different from the plaintext alphabet; for example, in the pigpen cipher, the ciphertext consists of a set of symbols derived from a grid. for example:
+
+such features make little difference to the security of a scheme, however – at the very least, any set of strange symbols can be transcribed back into an a-z alphabet and dealt with as normal.
+
+in lists and catalogues for salespeople, a very simple encryption is sometimes used to replace numeric digits by letters.
+
+a disadvantage of this method of derangement is that the last letters of the alphabet (which are mostly low frequency) tend to stay at the end. a stronger way of constructing a mixed alphabet is to perform a columnar transposition on the ordinary alphabet using the keyword, but this is not often done.
+
+although the number of possible keys is very large (26! ≈ 2^88.4, or about 88 bits), this cipher is not very strong, and is easily broken. provided the message is of reasonable length (see below), the cryptanalyst can deduce the probable meaning of the most common symbols by analyzing the frequency distribution of the ciphertext. this allows formation of partial words, which can be tentatively filled in, progressively expanding the (partial) solution (see frequency analysis for a demonstration of this). in some cases, underlying words can also be determined from the pattern of their letters; for example, attract, osseous, and words with those two as the root are the only common english words with the pattern abbcadb. many people solve such ciphers for recreation, as with cryptogram puzzles in the newspaper.
+
+according to the unicity distance of english, 27.6 letters of ciphertext are required to crack a mixed alphabet simple substitution. in practice, typically about 50 letters are needed, although some messages can be broken with fewer if unusual patterns are found. in other cases, the plaintext can be contrived to have a nearly flat frequency distribution, and much longer plaintexts will then be required by the cryptanalyst.
+
+an early attempt to increase the difficulty of frequency analysis attacks on substitution ciphers was to disguise plaintext letter frequencies by homophony. in these ciphers, plaintext letters map to more than one ciphertext symbol. usually, the highest-frequency plaintext symbols are given more equivalents than lower frequency letters. in this way, the frequency distribution is flattened, making analysis more difficult.
+
+since more than 26 characters will be required in the ciphertext alphabet, various solutions are employed to invent larger alphabets. perhaps the simplest is to use a numeric substitution 'alphabet'. another method consists of simple variations on the existing alphabet; uppercase, lowercase, upside down, etc. more artistically, though not necessarily more securely, some homophonic ciphers employed wholly invented alphabets of fanciful symbols.
+
+one variant is the nomenclator. named after the public official who announced the titles of visiting dignitaries, this cipher combines a small codebook with large homophonic substitution tables. originally the code was restricted to the names of important people, hence the name of the cipher; in later years it covered many common words and place names as well. the symbols for whole words (codewords in modern parlance) and letters (cipher in modern parlance) were not distinguished in the ciphertext. the rossignols' great cipher used by louis xiv of france was one.

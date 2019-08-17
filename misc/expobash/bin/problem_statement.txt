@@ -1,0 +1,3 @@
+Fishy is trying to hack into secret government website! The 10 digit passcode is very secure, but in order to generate the passcode, a secret algorithm was used. Fishy was able to figure out the algorithm, but he doesn't know how to calculate the passcode quickly? Can you help fishy calculate all the passcodes?
+
+The algorithm for the password is as follow: There are 2 arrays given to you of length n: a and b. For each subsequence of a that can be created by deleting some (maybe all) of the elements a, we calculate the value of the subsequence by taking the XOR of the ith element of subarray with b[i]. Your goal is the find the last 10 digits of the sum of the values of all possible subsequences of a. 

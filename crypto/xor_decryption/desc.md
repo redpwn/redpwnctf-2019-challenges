@@ -1,0 +1,1 @@
+Tux stole Brownie’s USB. After taking it back, Brownie went to read the novel he had downloaded, but realized that it was all gibberish! He overheard Tux say that his password was 38 characters long, but had no idea how to decode the file. Can you help Brownie figure out the key?

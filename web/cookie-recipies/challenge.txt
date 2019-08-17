@@ -1,0 +1,4 @@
+name: cookie-recipies
+description: Robert has a database for all kinds of cookie recipies. He told me the flag is accessable through his website, but I couldn't find it. Can you give me a hand?
+provide: link to webpage
+flag: flag{b15cu175_4r3_my_f4v0r173_k1nd_0f_c00k13}

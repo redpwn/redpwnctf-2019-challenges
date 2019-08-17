@@ -1,0 +1,1 @@
+flag{qemu_is_better_09831912393}

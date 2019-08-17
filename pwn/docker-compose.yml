@@ -1,0 +1,47 @@
+version: '3'
+services:
+  babbypwn:
+    build: babbypwn/
+    ports:
+      - "4001:9999"
+  hardmode:
+    build: hardmode/
+    ports:
+      - "4002:9999"
+  rot26:
+    build: rot26/
+    ports:
+      - "4003:9999"
+  bronze_ropchain:
+    build: bronze_ropchain/
+    ports:
+      - "4004:9999"
+  zipline:
+    build: zipline/
+    ports:
+      - "4005:9999"
+  dennis_says:
+    build: dennis_says/
+    ports:
+      - "4006:9999"
+  black_echo:
+    build: black_echo/
+    ports:
+      - "4007:9999"
+  stop-rop-n-roll:
+    build: stop-rop-n-roll/
+    ports:
+      - "4008:9999"
+  knuth:
+    build: knuth/
+    ports:
+      - "4009:9999"
+  penpal_world:
+    build: penpal_world
+    ports:
+      - "4010:9999"
+ #ascent_to_kernel_land:
+ #  build: ascent_to_kernel_land/
+ #  ports:
+ #    - "4011:9999"
+

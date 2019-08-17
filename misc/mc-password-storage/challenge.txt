@@ -1,0 +1,5 @@
+name: MC_Password_Manager
+description: My friend stores his passwords in Minecraft worlds, and while he was distracted, I grabbed one of them. However, the password is encrypted. Could you help me get his password?
+provide: Password_Manager.zip
+flag: flag{m1n3cr4f7_x0r_71m3}
+solution: Observe that the Minecraft world's redstone functions as multi-byte XOR decryption, copy down the encrypted password and the known parts of the key and brute force the 8 possible cases for the solution.

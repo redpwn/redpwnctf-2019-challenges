@@ -1,0 +1,4 @@
+.POSIX:
+
+babbypwn: babbypwn.c
+

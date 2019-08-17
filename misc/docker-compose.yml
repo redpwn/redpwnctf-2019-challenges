@@ -1,0 +1,30 @@
+version: '3'
+services:
+  tuxtriviashow:
+    build: tuxtriviashow/
+    ports:
+      - "6001:3455"
+  l-star:
+    build: l-star/
+    ports:
+      - "6002:8888"
+  mallcop:
+    build: mallcop/
+    ports:
+      - "6003:8888"
+  he-sed-she-sed:
+    build: he-sed-she-sed/
+    ports:
+      - "6004:8888"
+  expobash:
+    build: expobash/
+    ports:
+      - "6005:8888"
+  genericpyjail:
+    build: genericpyjail/
+    ports:
+      - "6006:8888"
+  genericpyjail2:
+    build: genericpyjail2/
+    ports:
+      - "6007:8888"

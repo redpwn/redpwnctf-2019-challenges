@@ -1,0 +1,1 @@
+Apparently, this picture has a name? The flag is in the format flag{name}

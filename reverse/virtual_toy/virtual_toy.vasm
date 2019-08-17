@@ -1,0 +1,32 @@
+check:
+
+push ciphertext
+; Push in this order:
+; [0, 12596, 14668, 14500, 14668, 14696, 14724, 14500, 14724, 14668, 14528, 14500, 14752, 13436, 12904, 13268, 12848, 12848, 13268, 13352, 13436, 12876, 13156, 13436, 12820, 13044, 13268, 12932, 12652, 13212, 13380, 13072, 13240]
+
+loop:
+
+dup
+log_not
+br good
+in
+add 10
+mul 1337
+div 191
+xor 0xfff
+neg
+bit_not
+shl 2
+xor
+log_not
+br loop
+
+bad:
+
+print('Error')
+ret 1
+
+good:
+
+print('Access granted')
+ret 0

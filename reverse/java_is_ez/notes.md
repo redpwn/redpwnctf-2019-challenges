@@ -1,0 +1,1 @@
+Only upload JavaIsEZ.class

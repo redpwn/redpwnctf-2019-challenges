@@ -1,0 +1,10 @@
+version: '3'
+services:
+  binary:
+    build: 010000100110100101101110011000010111001001111001/ 
+    ports:
+      - "5001:3455"
+  rpg_fanfic:
+    build: rpg_fanfic/
+    ports:
+      - "5002:3455"

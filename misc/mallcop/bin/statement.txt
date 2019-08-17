@@ -1,0 +1,15 @@
+Sick of Chick-fil-A, Daniel's son deserts him to make a break for the parking lot. (Un?)fortunately, Max the Mall Cop is here to help!
+The n stores in the mall are connected by walkways such that none of them form a cycle; in other words, there is exactly one path from one store to another. Daniel's son was last seen at store k.
+Stores connected to only one store lead to a parking lot. Max the Mall Cop decides to station his miniature clones at some of these parking lot stores.
+Every minute, Daniel's son and the miniature Maxes can move one meter towards an adjacent store or stay put. Daniel's son is caught when he coincides with a miniature Max at a store or a walkway.
+What is the minimum number of miniature Maxes that Max the Mall Cop should station to ensure that Daniel's son cannot reach a parking lot?
+
+Input:
+	First line: n, k
+	Next n-1 lines:	a, b, x indicating a walkway between stores a and b with length x meters
+
+Output:
+	One line with the minimum miniature Maxes needed.
+
+Download the testcases from in.zip and enter your output here.
+

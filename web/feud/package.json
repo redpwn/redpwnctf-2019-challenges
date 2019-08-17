@@ -1,0 +1,9 @@
+{
+  "name": "feud",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "backblaze-b2": "^1.4.0",
+    "raw-body": "^2.4.1"
+  }
+}

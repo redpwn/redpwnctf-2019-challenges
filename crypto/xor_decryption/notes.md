@@ -1,0 +1,1 @@
+The challenge files are desc.md and encrypted.txt. solution.py, main.py, plaintext.txt, and flag.txt are to be kept secret.
